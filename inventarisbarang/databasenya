@@ -1,0 +1,16 @@
+CREATE TABLE `barang` (
+  `id_barang` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `no_urut` VARCHAR(50) NOT NULL,
+  `jenis_nama_barang` VARCHAR(255) NOT NULL,
+  `merek_model` VARCHAR(255) NOT NULL,
+  `no_seri_pabrik` VARCHAR(255) NOT NULL,
+  `ukuran` VARCHAR(100) NOT NULL,
+  `warna` VARCHAR(100) NOT NULL,
+  `bahan` VARCHAR(100) NOT NULL,
+  `tahun_pembuatan_pembelian` VARCHAR(50) NOT NULL,
+  `harga_barang` DECIMAL(15,2) NOT NULL,  -- Kolom harga_barang
+  `no_kode_barang` VARCHAR(100) NOT NULL,
+  `jumlah_barang_register` INT(11) NOT NULL,
+  `keadaan_barang` ENUM('Baik', 'Kurang Baik', 'Rusak Berat') NOT NULL
+);
+-- buat di php myadmin
